@@ -20,9 +20,9 @@ export function Footer() {
         <div>
           <h4 className="text-xs font-semibold uppercase tracking-widest text-ink-400 mb-4">{t('footer_product')}</h4>
           <ul className="space-y-2.5 text-sm text-ink-300">
-            <li><Link to="/#platform" className="hover:text-white transition-colors">{t('nav_platform')}</Link></li>
-            <li><Link to="/pricing" className="hover:text-white transition-colors">{t('nav_pricing')}</Link></li>
             <li><Link to="/features" className="hover:text-white transition-colors">Features</Link></li>
+            <li><Link to="/demo" className="hover:text-white transition-colors">Product Demo</Link></li>
+            <li><Link to="/pricing" className="hover:text-white transition-colors">{t('nav_pricing')}</Link></li>
             <li><Link to="/app" className="hover:text-white transition-colors">{t('nav_open')}</Link></li>
           </ul>
         </div>

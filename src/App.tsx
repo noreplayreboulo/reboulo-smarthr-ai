@@ -14,8 +14,10 @@ import { Privacy }  from './pages/Privacy';
 import { Terms }    from './pages/Terms';
 import { Security } from './pages/Security';
 import { Contact }  from './pages/Contact';
+import { Demo }     from './pages/Demo';
 import { SignIn }   from './pages/SignIn';
 import { SignUp }   from './pages/SignUp';
+import { AIAssistant } from './components/AIAssistant';
 
 // App pages
 import { Dashboard }      from './pages/app/Dashboard';
@@ -72,6 +74,7 @@ export default function App() {
             {/* ── Public ── */}
             <Route path="/"         element={<><Navbar /><Landing /><Footer /></>} />
             <Route path="/features" element={<Features />} />
+            <Route path="/demo"     element={<Demo />} />
             <Route path="/pricing"  element={<Pricing />} />
             <Route path="/privacy"  element={<Privacy />} />
             <Route path="/terms"    element={<Terms />} />
@@ -144,6 +147,9 @@ export default function App() {
             {/* 404 */}
             <Route path="*" element={<NotFound />} />
           </Routes>
+
+          {/* AI Assistant — visible on all pages */}
+          <AIAssistant />
         </BrowserRouter>
       </AuthProvider>
     </LanguageProvider>
