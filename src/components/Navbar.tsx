@@ -19,7 +19,7 @@ export function Navbar() {
 
   const navLinks = [
     { label: t('nav_platform'),  href: '/#platform' },
-    { label: t('nav_studio'),    href: '/#studio' },
+    { label: 'Features',         href: '/features' },
     { label: t('nav_pricing'),   href: '/pricing' },
     { label: t('nav_open'),      href: '/app' },
   ];
@@ -32,14 +32,10 @@ export function Navbar() {
       <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         <Link to="/" className="flex-shrink-0"><Logo size="sm" /></Link>
 
-        {/* Desktop nav */}
         <ul className={cn('hidden md:flex items-center gap-1', isRTL && 'flex-row-reverse')}>
           {navLinks.map(link => (
             <li key={link.href}>
-              <Link
-                to={link.href}
-                className="px-4 py-2 text-sm font-medium text-ink-600 hover:text-ink-900 hover:bg-ink-50 rounded-lg transition-colors"
-              >
+              <Link to={link.href} className="px-4 py-2 text-sm font-medium text-ink-600 hover:text-ink-900 hover:bg-ink-50 rounded-lg transition-colors">
                 {link.label}
               </Link>
             </li>
@@ -48,17 +44,15 @@ export function Navbar() {
 
         <div className={cn('hidden md:flex items-center gap-2', isRTL && 'flex-row-reverse')}>
           <LanguageSwitcher />
-          <Link to="/signin" className="btn-ghost text-sm">{t('nav_signin')}</Link>
-          <Link to="/signup" className="btn-primary text-sm">{t('nav_start')}</Link>
+          <Link to="/signin"  className="btn-ghost text-sm">{t('nav_signin')}</Link>
+          <Link to="/signup"  className="btn-primary text-sm">{t('nav_start')}</Link>
         </div>
 
-        {/* Mobile toggle */}
         <button className="md:hidden btn-ghost" onClick={() => setMobileOpen(v => !v)}>
           {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
         </button>
       </nav>
 
-      {/* Mobile menu */}
       {mobileOpen && (
         <div className="md:hidden bg-white border-t border-ink-100 px-6 py-4 space-y-1 animate-fade-in">
           {navLinks.map(link => (
