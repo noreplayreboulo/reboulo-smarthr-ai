@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { ArrowRight, CheckCircle2, Brain, FileText, Radar, Scale, BarChart3, Heart, Star, BookOpen, MessageSquare, Globe2, TrendingUp, Search, Award, Briefcase, Zap } from 'lucide-react';
+import { ArrowRight, CheckCircle2, Brain, FileText, Radar, Scale, BarChart3, Heart, Star, BookOpen, MessageSquare, TrendingUp, Search, Award, Briefcase, Zap } from 'lucide-react';
 import { Navbar } from '../components/Navbar';
 import { Footer } from '../components/Footer';
 import { SEOHead } from '../components/SEOHead';
@@ -25,9 +25,9 @@ const tiers = [
         points: ['Attrition risk detection','Burnout & absenteeism signals','Department health scores 0–100','Skills gap analysis','Manager risk alerts','Productivity anomaly detection','Executive summary export'],
       },
       {
-        icon: Scale, title: 'HR Compliance & Policy Guardian™',
-        desc: 'Reduce legal and administrative mistakes across your organisation.',
-        points: ['Country-specific compliance checklists','Visa/work-permit expiry alerts','Probation tracker','Document expiry alerts','Policy gap detector','Audit readiness report','UAE, Portugal, UK, Spain, France, USA'],
+        icon: Scale, title: 'HR Policy & Audit Guardian™',
+        desc: 'Keep your HR department compliant with internal policies and employment standards.',
+        points: ['Leave policy completeness checker (annual, sick, maternity, paternity, unpaid)','Probation end-date tracker with review reminders','Employment contract type audit (permanent, fixed-term, part-time, freelance)','HR policy gap detector — identify missing HR policies','HR audit readiness score with prioritised action checklist','Internal HR compliance — not legal or immigration services'],
       },
       {
         icon: BarChart3, title: 'Executive HR Briefing Room™',
@@ -61,11 +61,6 @@ const tiers = [
         points: ['Conflict diagnosis & script','Low-morale intervention plan','Performance conversation guide','Burnout conversation support','Return-to-office conflict handling','Employee grievance first response','Meeting agenda & follow-up plan'],
       },
       {
-        icon: Globe2, title: 'Global HR Country Guide™',
-        desc: 'Country-specific HR rules for companies operating across borders.',
-        points: ['Hiring checklist by country','Contract requirements','Probation rules','Annual & sick leave laws','Termination basics','Work permit reminders','UAE · Portugal · UK · Spain · France · USA'],
-      },
-      {
         icon: TrendingUp, title: 'Benefits & Compensation Intelligence™',
         desc: 'Help companies design and communicate competitive benefits.',
         points: ['Salary band builder','Benefits comparison tool','Compensation communication generator','Pay transparency readiness check','Benefits satisfaction pulse','Payroll/benefits checklist','Equity/fairness risk alerts'],
@@ -79,7 +74,7 @@ const tiers = [
       {
         icon: Search, title: 'HR Intelligence Center™',
         desc: 'A live AI knowledge center for HR leaders and teams.',
-        points: ['AI search for any HR question','Topic library: recruitment, onboarding, culture, compliance','Daily HR risk summaries','Country-specific HR insights','Executive-level risk alerts','Practical templates & action plans','Source reliability labels'],
+        points: ['AI search for any HR department question','Topic library: recruitment, onboarding, performance, culture, leave, compensation','Daily HR risk summaries for your company','Practical HR templates and action plans','Executive-level HR alerts and recommendations','Source reliability labels on all AI outputs'],
       },
       {
         icon: Award, title: 'HR Academy & Competency Builder™',

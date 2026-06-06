@@ -39,8 +39,8 @@ export function Privacy() {
               body: `We do not auto-delete customer data when a trial expires or a subscription is cancelled. Your data remains available for 90 days after subscription cancellation, after which we may delete it following written notice. Employee documents follow your company's defined retention policy.`,
             },
             {
-              title: '7. Your rights (GDPR & UAE PDPL)',
-              body: `You have the right to access, correct, export, or delete your personal data. You may submit a privacy request via our platform's Privacy Requests section or by emailing phd.ghali@reboulo.com. We respond within 30 days. For UAE PDPL requests, we comply with the Personal Data Protection Law requirements.`,
+              title: '7. Your data rights',
+              body: `You have the right to access, correct, export, or delete your personal data held by REBOULO SmartHR AI. You may submit a privacy request via the Privacy Requests section inside the platform, or by emailing phd.ghali@reboulo.com. We respond within 30 days. We handle personal data in accordance with applicable data protection laws in the jurisdictions where we operate.`,
             },
             {
               title: '8. Third-party services',

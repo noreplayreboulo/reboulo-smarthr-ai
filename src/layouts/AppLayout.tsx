@@ -4,7 +4,7 @@ import {
   LayoutDashboard, Building2, Users, FolderKanban, Sparkles, Brain,
   GraduationCap, Bell, Shield, CreditCard, Settings, Zap, Rocket,
   LogOut, Menu, X, Radar, Scale, BarChart3, Heart, Star, BookOpen,
-  MessageSquare, Globe2, TrendingUp, Search, Award, Briefcase, Newspaper,
+  MessageSquare, TrendingUp, Search, Award, Briefcase, Newspaper,
   ChevronDown, ChevronRight,
 } from 'lucide-react';
 import { Logo } from '../components/Logo';
@@ -21,13 +21,12 @@ const NAV: NavItem[] = [
   { label: 'Recruitment AI',      href: '/app/recruitment',        icon: Brain },
   { label: 'HR Documents',        href: '/app/studio',             icon: Sparkles },
   { label: 'Workforce Radar',     href: '/app/workforce-radar',    icon: Radar },
-  { label: 'Compliance Guardian', href: '/app/compliance',         icon: Scale },
+  { label: 'HR Policy Audit',     href: '/app/compliance',         icon: Scale },
   { label: 'Pulse Surveys',       href: '/app/pulse-surveys',      icon: Heart },
   { label: 'Executive Briefing',  href: '/app/executive-briefing', icon: BarChart3 },
   { label: 'Employer Brand',      href: '/app/employer-brand',     icon: Star },
   { label: 'Onboarding AI',       href: '/app/onboarding',         icon: BookOpen },
   { label: 'Culture Copilot',     href: '/app/culture-copilot',    icon: MessageSquare },
-  { label: 'Country Guide',       href: '/app/country-guide',      icon: Globe2 },
   { label: 'Compensation',        href: '/app/compensation',       icon: TrendingUp },
   { label: 'Intelligence Center', href: '/app/intelligence-center',icon: Search },
   { label: 'HR Academy',          href: '/app/hr-academy',         icon: Award },

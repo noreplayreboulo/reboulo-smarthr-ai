@@ -132,7 +132,7 @@ export function Pricing() {
               { q: 'Is there a limit on employee imports?', a: 'No import limit. The employee count limit applies to active employees in your directory.' },
               { q: 'Is OpenAI required for the AI Console?', a: 'Yes. You provide your own OpenAI API key, stored securely in our backend. We never expose keys to the frontend.' },
               { q: 'Can I manage multiple companies?', a: 'Yes. One account can manage up to 3 separate company workspaces. Each has isolated data, branding, employees, and billing.' },
-              { q: 'Is the platform GDPR and UAE PDPL ready?', a: 'We built with a privacy-by-design architecture, RLS-enforced data isolation, and private document storage. We recommend legal review for your specific compliance needs.' },
+              { q: 'Is HR employee data secure and private?', a: 'Yes. Every company\'s HR data is fully isolated using Row-Level Security. Private document storage with signed URLs. No permanent public links to employee records or HR documents. We take HR data privacy seriously by design.' },
             ].map(f => (
               <details key={f.q} className="border-b border-ink-100 py-4 group">
                 <summary className="flex items-center justify-between cursor-pointer text-sm font-medium text-ink-900 list-none">

@@ -27,7 +27,7 @@ import {
   Building2, Users, FolderKanban, Sparkles, Brain, GraduationCap,
   Bell, Shield, CreditCard, Zap, Settings, Rocket,
   Radar, Scale, BarChart3, Heart, Star, BookOpen,
-  MessageSquare, Globe2, TrendingUp, Search, Award, Briefcase, Newspaper,
+  MessageSquare, TrendingUp, Search, Award, Briefcase, Newspaper,
 } from 'lucide-react';
 
 function StaticPage({ children }: { children: React.ReactNode }) {
@@ -118,22 +118,21 @@ export default function App() {
 
             <Route path="/app/studio/*"             element={P('HR Document Generator™', Sparkles, 'Employment contracts, offer letters, warning letters, salary certificates, probation reviews — formal, friendly, or bilingual.')} />
             <Route path="/app/workforce-radar"      element={P('Workforce Intelligence Radar™', Radar, 'Department health scores 0–100, attrition risk, burnout signals, absenteeism trends, skills gaps, manager risk alerts.')} />
-            <Route path="/app/compliance"           element={P('HR Compliance & Policy Guardian™', Scale, 'Country-specific compliance checklists, visa/work-permit expiry alerts, probation tracker, policy gap detector, audit readiness.')} />
-            <Route path="/app/executive-briefing"   element={P('Executive HR Briefing Room™', BarChart3, 'Monthly HR summary, top 3 risks, hiring bottlenecks, employee mood, compliance urgency — board-ready PDF export.')} />
-            <Route path="/app/pulse-surveys"        element={P('Pulse Survey & Sentiment Risk Engine™', Heart, 'Anonymous pulse, department mood score, burnout alerts, manager trust score — AI action plan.')} />
+            <Route path="/app/compliance"           element={P('HR Policy & Audit Guardian™', Scale, 'Leave policy checker, probation tracker, employment contract type audit, HR policy gap detector, audit readiness report. Internal HR compliance only — not legal or immigration services.')} />
+            <Route path="/app/executive-briefing"   element={P('Executive HR Briefing Room™', BarChart3, 'Monthly HR summary, workforce health score, top HR risks, hiring bottlenecks, employee mood — board-ready PDF export.')} />
+            <Route path="/app/pulse-surveys"        element={P('Pulse Survey & Sentiment Engine™', Heart, 'Anonymous pulse, department mood score, burnout alerts, manager trust score — AI-generated HR action plan.')} />
 
-            {/* AI Tools — Priority 2 */}
-            <Route path="/app/employer-brand"       element={P('Employer Brand Studio™', Star, 'EVP generator, job-ad tone analyzer, candidate attraction score, brand weakness detection, recruitment messaging.')} />
-            <Route path="/app/onboarding"           element={P('Onboarding Journey AI™', BookOpen, '7/30/60/90-day plans, role-specific checklists, welcome packs, culture introduction, probation checkpoints.')} />
-            <Route path="/app/culture-copilot"      element={P('Culture & Leadership Copilot™', MessageSquare, 'Conflict handling scripts, low-morale intervention, performance conversation guides, burnout support.')} />
-            <Route path="/app/country-guide"        element={P('Global HR Country Guide™', Globe2, 'Hiring checklists, contract requirements, leave laws, termination basics — UAE, Portugal, UK, Spain, France, USA.')} />
-            <Route path="/app/compensation"         element={P('Benefits & Compensation Intelligence™', TrendingUp, 'Salary band builder, benefits comparison, pay-transparency readiness, equity/fairness alerts.')} />
+            {/* AI Tools — Premium */}
+            <Route path="/app/employer-brand"       element={P('Employer Brand Studio™', Star, 'EVP generator, job-ad tone analyser, candidate attraction score, brand weakness detection, recruitment messaging.')} />
+            <Route path="/app/onboarding"           element={P('Onboarding Journey AI™', BookOpen, '7/30/60/90-day onboarding plans, role-specific checklists, welcome packs, culture introduction, probation checkpoints.')} />
+            <Route path="/app/culture-copilot"      element={P('Culture & Leadership Copilot™', MessageSquare, 'Conflict handling scripts, low-morale intervention, performance conversation guides, burnout support — HR-guided, not AI-decided.')} />
+            <Route path="/app/compensation"         element={P('Benefits & Compensation Intelligence™', TrendingUp, 'Salary band builder, benefits comparison, pay-transparency readiness, compensation communication generator, equity and fairness alerts.')} />
 
-            {/* AI Tools — Priority 3 */}
-            <Route path="/app/intelligence-center"  element={P('HR Intelligence Center™', Search, 'AI search for HR questions, topic library, daily risk alerts, country-specific insights, recommended actions.')} />
+            {/* AI Tools — Growth */}
+            <Route path="/app/intelligence-center"  element={P('HR Intelligence Center™', Search, 'AI search for HR questions, topic library covering recruitment, performance, leave, culture, onboarding, compensation — practical HR guidance only.')} />
             <Route path="/app/hr-academy"           element={P('HR Academy & Competency Builder™', Award, 'Training pathways, competency matrices, skills gap reports, 30/60/90-day learning plans.')} />
             <Route path="/app/exit-retention"       element={P('Exit & Retention Intelligence™', Briefcase, 'Exit interview analyzer, resignation clustering, retention risk score, stay-interview generator.')} />
-            <Route path="/app/hr-newsroom"          element={P('AI HR Newsroom™', Newspaper, 'Daily HR digest, weekly executive briefing, AI summaries — compliance, recruitment, AI, culture filters.')} />
+            <Route path="/app/hr-newsroom"          element={P('AI HR Newsroom™', Newspaper, 'Daily HR digest, weekly executive briefing, AI summaries of HR trends — recruitment, performance, culture, benefits, leadership.')} />
 
             {/* Ops */}
             <Route path="/app/learn/*"              element={P('Demo & Training Center™', GraduationCap)} />

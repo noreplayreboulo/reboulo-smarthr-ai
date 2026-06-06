@@ -9,7 +9,7 @@ const pillars = [
   { icon: Key,          title: 'Secret Management',             desc: 'OpenAI keys, Stripe secrets, and service role keys are never exposed to the frontend. All sensitive operations run through Supabase Edge Functions with server-side secrets.' },
   { icon: Eye,          title: 'AI Audit Logging',              desc: 'Every AI Console interaction is logged: tool used, response mode, language, token count, and any legal or privacy review flags. Logs are immutable and scoped per company.' },
   { icon: Shield,       title: 'Role-Based Access Control',     desc: 'Eight distinct roles (owner, hr_admin, hr_staff, recruiter, manager, employee, auditor, viewer) with granular permissions enforced at the RLS and backend level.' },
-  { icon: AlertTriangle,'title': 'Privacy-by-Design',           desc: 'GDPR-ready architecture, UAE PDPL-aware workflows, privacy request management, and data retention controls. Human review required for all sensitive AI outputs.' },
+  { icon: AlertTriangle, title: 'Privacy-by-Design',            desc: 'HR data is sensitive. Privacy is built into the architecture — private storage, signed URLs, data retention controls, privacy request management. Human review required for all sensitive AI-generated HR outputs.' },
 ];
 
 export function Security() {

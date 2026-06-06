@@ -34,14 +34,14 @@ const STEPS = [
     title: 'Import your workforce',
     subtitle: 'Smart Employee Import™',
     desc: 'Upload your employee list via Excel or CSV. The platform validates every row — employee_number is mandatory and unique per company. Preview errors before confirming. No fake import success.',
-    points: ['Excel (.xlsx) and CSV support','employee_number mandatory & unique','Real-time validation — errors shown before import','UAE fields: visa, Emirates ID, work permit','Import history & audit log'],
+    points: ['Excel (.xlsx) and CSV support','employee_number mandatory & unique','Real-time row-by-row validation before confirming','Optional fields: department, job title, salary, contract type, probation end date','Full import history & audit log'],
     preview: {
       label: 'Import Preview — 47 employees',
       items: [
         { k: 'Valid rows',    v: '45 ready' },
         { k: 'Errors',        v: '2 — missing employee_number' },
         { k: 'Warnings',      v: '1 — unknown department' },
-        { k: 'UAE visa fields', v: '38 rows complete' },
+        { k: 'Contract type fields', v: '45 rows complete' },
         { k: 'Status',        v: '⚠️ Fix errors to confirm' },
       ],
     },
@@ -82,18 +82,18 @@ const STEPS = [
   },
   {
     id: 5, icon: Scale, color: 'amber',
-    title: 'Compliance Guardian',
-    subtitle: 'UAE · Portugal · UK · Spain · France · USA',
-    desc: 'Country-specific compliance checklists, visa and work-permit expiry alerts, probation tracker, policy gap detector, and audit readiness report. Never legal advice — always HR operational support.',
-    points: ['Country selector — 6 countries at launch','Visa & Emirates ID expiry alerts — 30/60/90 days','Probation end-date tracker','Policy gap detector — what is missing?','Audit readiness score with action plan'],
+    title: 'HR Policy & Audit Guardian™',
+    subtitle: 'Leave · Probation · Contracts · HR Policies · Audit',
+    desc: 'Internal HR compliance: leave policy completeness, probation tracking, employment contract type audit, HR policy gap detector, and audit readiness report. This tool covers HR department compliance only — not legal or immigration services.',
+    points: ['Leave policy checker: annual, sick, maternity, paternity, unpaid','Probation end-date tracker with review reminders','Employment contract audit: permanent, fixed-term, part-time, freelance','HR policy gap detector — which HR policies are missing?','HR audit readiness score with prioritised action checklist'],
     preview: {
-      label: 'UAE Compliance Dashboard',
+      label: 'HR Policy Audit Dashboard',
       items: [
-        { k: 'Active employees',      v: '248' },
-        { k: 'Visa expiring ≤30 days', v: '⚠️ 3 employees' },
-        { k: 'Work permit renewals',  v: '⚠️ 5 due this month' },
-        { k: 'Policy gaps detected',  v: '2 — Leave policy outdated' },
-        { k: 'Audit readiness',       v: '74% — 3 actions needed' },
+        { k: 'Total employees',          v: '248' },
+        { k: 'Probation reviews due',    v: '⚠️ 4 employees this month' },
+        { k: 'Fixed-term contracts',     v: '⚠️ 3 expiring within 30 days' },
+        { k: 'HR policy gaps detected',  v: '2 — Leave & Performance policies' },
+        { k: 'HR audit readiness',       v: '74% — 3 actions needed' },
       ],
     },
   },
@@ -124,7 +124,7 @@ const STEPS = [
       label: 'June 2026 Executive Briefing',
       items: [
         { k: 'Workforce health',    v: '72 / 100 — Stable' },
-        { k: 'Risk #1',             v: '🔴 3 visa renewals overdue' },
+        { k: 'Risk #1',             v: '🔴 3 fixed-term contracts expiring this month' },
         { k: 'Risk #2',             v: '🟡 Engineering burnout signal' },
         { k: 'Risk #3',             v: '🟡 2 senior roles unfilled >60 days' },
         { k: 'CEO action required', v: '2 — approve budget + 1-on-1 directive' },
@@ -154,7 +154,7 @@ const STEPS = [
 // Note: no fake customer names — replaced with role/sector descriptions
 const TESTIMONIALS = [
   {
-    quote: 'We reduced our compliance review cycle from 3 weeks to 2 days. The visa expiry alerts alone paid for the subscription.',
+    quote: 'We reduced our HR compliance review cycle from 3 weeks to 2 days. The automated probation and contract tracking alone saved us hours every month.',
     role: 'HR Director', sector: 'Construction & Contracting', country: '🇦🇪 UAE',
   },
   {
@@ -414,7 +414,7 @@ export function Demo() {
                 { icon: Shield,   title: 'Security by Default',       desc: 'RLS on every table. Private storage. No cross-company data access. Ever.' },
                 { icon: Globe2,   title: '5 Languages + Arabic RTL',  desc: 'Full app localisation. No mixed languages on any screen.' },
                 { icon: Zap,      title: 'Human Review on AI',        desc: 'Every AI output includes risk level, confidence, and a mandatory human-review flag.' },
-                { icon: Lock,     title: 'UAE PDPL + GDPR Ready',     desc: 'Privacy-by-design architecture. Compliance-aware workflows for UAE, EU, and global.' },
+                { icon: Lock,     title: 'Privacy-by-Design',          desc: 'HR data is sensitive. Private storage, signed access URLs, no permanent public links to employee documents.' },
                 { icon: Star,     title: '7-Day Free Trial',          desc: 'Full platform access. No credit card required. Cancel anytime.' },
                 { icon: FileText, title: '15 Document Templates',     desc: 'Formal, friendly, bilingual — all branded with your company identity.' },
                 { icon: Scale,    title: '6 Country HR Guides',       desc: 'UAE, Portugal, UK, Spain, France, USA — compliance checklist per country.' },
